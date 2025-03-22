@@ -1,98 +1,161 @@
+/* Define estilos globais para todos os elementos */
 * {
     margin: 0;
+    /* Remove margem padrão */
     padding: 0;
+    /* Remove padding padrão */
     box-sizing: border-box;
+    /* Define box-sizing como border-box */
     font-family: "Work Sans", sans-serif;
+    /* Define a fonte padrão */
 }
 
+/* Define variáveis de cores */
 :root {
     --Neutral-White: #ffffff;
+    /* Define cor branca */
     --Pink: #ad28eb;
+    /* Define cor rosa */
     --Light-Pink: #f9f0ff;
+    /* Define cor rosa claro */
     --Grayish-Purple: #8c6991;
+    /* Define cor roxo acinzentado */
     --Dark-Purple: #2f1533;
+    /* Define cor roxo escuro */
 }
 
+/* Estilos para o corpo da página */
 body {
     background-color: var(--Light-Pink);
+    /* Define cor de fundo */
     background-image: url("../img/background-pattern-desktop.svg");
+    /* Define imagem de fundo */
     background-repeat: no-repeat;
+    /* Não repete a imagem de fundo */
     background-size: contain;
+    /* Ajusta o tamanho da imagem de fundo */
     display: flex;
+    /* Usa flexbox para o layout */
     justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
     align-items: center;
+    /* Centraliza o conteúdo verticalmente */
     height: 100vh;
-
+    /* Define a altura como 100% da altura da viewport */
 }
 
-
-
+/* Estilos para o container principal */
 .container {
     display: flex;
+    /* Usa flexbox para o layout */
     flex-direction: column;
+    /* Define a direção do flex como coluna */
     align-items: center;
+    /* Centraliza os itens horizontalmente */
     width: 90%;
+    /* Define a largura como 90% */
     max-width: 550px;
+    /* Define a largura máxima como 550px */
     padding: 2rem;
+    /* Define padding de 2rem */
     border-radius: 10px;
+    /* Define bordas arredondadas */
     background-color: white;
+    /* Define cor de fundo branca */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra ao container */
 }
 
+/* Estilos para o título */
 .title {
     display: flex;
+    /* Usa flexbox para o layout */
     gap: 0.5rem;
+    /* Define espaço entre os itens */
     font-size: 1.5rem;
+    /* Define tamanho da fonte */
     margin-bottom: 2rem;
+    /* Define margem inferior */
     color: var(--Dark-Purple);
+    /* Define cor do texto */
     align-items: center;
+    /* Centraliza os itens horizontalmente */
     font-weight: 700;
+    /* Define peso da fonte */
 }
 
+/* Estilos para a imagem do título */
 .title img {
     width: 40px;
+    /* Define largura da imagem */
     height: 40px;
+    /* Define altura da imagem */
 }
 
+/* Estilos para as perguntas */
 .question-1,
 .question-2,
 .question-3,
 .question-4 {
     width: 100%;
+    /* Define largura como 100% */
     display: flex;
+    /* Usa flexbox para o layout */
     align-items: center;
+    /* Centraliza os itens horizontalmente */
     justify-content: space-between;
+    /* Espaça os itens igualmente */
     padding: 0.5rem 0;
+    /* Define padding superior e inferior */
     flex-direction: column;
+    /* Define a direção do flex como coluna */
     border-bottom: 2px solid var(--Light-Pink);
+    /* Adiciona borda inferior */
 }
 
+/* Estilos para a classe q1 */
 .q1 {
     display: flex;
+    /* Usa flexbox para o layout */
     align-items: center;
+    /* Centraliza os itens horizontalmente */
 }
 
+/* Estilos para os elementos h2 */
 h2 {
     font-size: 1rem;
+    /* Define tamanho da fonte */
     color: var(--Dark-Purple);
+    /* Define cor do texto */
     font-weight: 600;
+    /* Define peso da fonte */
     margin-right: 1.6rem;
+    /* Define margem direita */
     cursor: pointer;
+    /* Define cursor como pointer */
 }
 
+/* Estilos para as imagens */
 img {
     width: 25px;
+    /* Define largura da imagem */
     height: 25px;
+    /* Define altura da imagem */
     cursor: pointer;
+    /* Define cursor como pointer */
 }
 
+/* Estilos para as respostas */
 .answer-1,
 .answer-2,
 .answer-3,
 .answer-4 {
     width: 100%;
+    /* Define largura como 100% */
     padding: 1rem 0;
+    /* Define padding superior e inferior */
     opacity: 1;
+    /* Define opacidade */
     max-height: 1000px;
     /* Define um valor grande para max-height */
     transition: opacity 0.5s ease, max-height 0.5s ease;
@@ -101,49 +164,70 @@ img {
     /* Garante que o conteúdo escondido não seja visível */
 }
 
+/* Estilos para os parágrafos */
 p {
     font-size: 16px;
+    /* Define tamanho da fonte */
     font-weight: 400;
+    /* Define peso da fonte */
     color: var(--Grayish-Purple);
+    /* Define cor do texto */
     line-height: 1.5;
+    /* Define altura da linha */
 }
 
+/* Estilos para a classe hide */
 .hide {
     opacity: 0;
+    /* Define opacidade como 0 */
     max-height: 0;
     /* Define max-height como 0 para esconder o conteúdo */
     padding: 0;
+    /* Remove padding */
     pointer-events: none;
+    /* Desativa eventos de ponteiro */
 }
 
+/* Estilos para a classe quest */
 .quest {
     display: flex;
+    /* Usa flexbox para o layout */
     align-items: center;
+    /* Centraliza os itens horizontalmente */
     justify-content: space-between;
+    /* Espaça os itens igualmente */
     width: 100%;
+    /* Define largura como 100% */
 }
 
-/* responsividade */
+/* Estilos responsivos para telas com largura máxima de 375px */
 @media (max-width: 375px) {
     .container {
         width: 90%;
+        /* Define largura como 90% */
         padding: 1rem;
+        /* Define padding de 1rem */
     }
 
     .title {
         font-size: 1.2rem;
+        /* Define tamanho da fonte */
     }
 
     h2 {
         font-size: 0.9rem;
+        /* Define tamanho da fonte */
     }
 
     p {
         font-size: 14px;
+        /* Define tamanho da fonte */
     }
 
     img {
         width: 20px;
+        /* Define largura da imagem */
         height: 20px;
+        /* Define altura da imagem */
     }
 }
