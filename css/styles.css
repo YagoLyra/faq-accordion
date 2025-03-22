@@ -122,3 +122,28 @@ p {
     justify-content: space-between;
     width: 100%;
 }
+
+/* responsividade */
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
