@@ -113,6 +113,11 @@ body {
     /* Adiciona borda inferior */
 }
 
+.question-4 {
+    border-bottom: none;
+    /* Remove borda inferior */
+}
+
 /* Estilos para a classe q1 */
 .q1 {
     display: flex;
