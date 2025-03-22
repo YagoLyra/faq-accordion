@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
 
 :root {
-    --White: #ffffff;
-    --Light-pink: #f9f0ff;
-    --Grayish-purple: #8c6991;
-    --Dark-purple: #2f1533;
+    --Neutral-White: #ffffff;
+    --Pink: #ad28eb;
+    --Light-Pink: #f9f0ff;
+    --Grayish-Purple: #8c6991;
+    --Dark-Purple: #2f1533;
 }
 
 body {
-    background-color: var(--Light-pink);
+    background-color: var(--Light-Pink);
     background-image: url("../img/background-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -20,7 +22,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: "Work Sans", sans-serif;
 }
 
 
